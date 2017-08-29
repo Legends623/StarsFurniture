@@ -1,0 +1,243 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  /*background: #222;*/
+  margin: 0;
+  font-weight: 400;
+  /*background-image: url("../images/logo.png");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Navigation Bar*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background: red;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+header::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 10px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 50px;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  color: blue;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: ' ';
+  display: block;
+  height: 5px;
+  background-color: blue;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*Main Content
+------------------------*/
+
+.content {
+  margin: 0 10%;
+}
+
+/*Home Page */
+
+#home {
+  background-color: #222;
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  /*border: 1px solid white;*/
+  margin: 0 auto;
+  padding-top: 20%;
+  background-color: #222;
+}
+
+.name {
+  display: block;
+  justify-content: center;
+  width: 100%;
+}
+
+.name h3 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+h1  {
+  color: white;
+  font-size: 5.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 4px red;
+  font-family: helvetica, serif;
+  letter-spacing: 20px;
+  margin: 0;
+  width: 100%;
+}
+
+.home span {
+  width: 100%;
+  padding-top: 20%;
+}
+
+.mainlogo {
+  display: flex;
+  justify-content: center;
+}
+
+.mainlogo img  {
+  width: 25%;
+  height: 25%;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+}
+
+.copy p {
+  color: white;
+  font-family: helvetica, serif;
+  font-size: 2em;
+}
+
+/*About Us*/
+
+.about {
+  margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  height: 600px;
+  background-color: #222;
+  padding-bottom: 20px;
+}
+
+.romance {
+    width: 50%;
+    margin: 0;
+    padding-top: 200px;
+
+}
+
+.romance p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 40px;
+  padding: 0 50px;
+
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+}
+
+/* Contact Page */
+
+.contact {
+  height: 600px;
+  background-color: #222;
+  margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.column {
+  width: 50%;
+}
+
+.one img {
+  width: 100%;
+  background-size: cover;
+  padding-left: 10px;
+  padding-top: 75px;
+}
+
+.two {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.address {
+  padding-top: 100px;
+}
+
+.hours {
+  padding-top: 75px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .home {
+    display: block;
+  }
+}
